@@ -1,0 +1,35 @@
+
+
+1.sexes         kadın=x,erkek=y,yoksa=z,
+
+2.ages          15-18=a,19-22=b,23-26=c,27-30=d,31-35=e,36-40=f,41+=g
+
+3.music-genre   thrash=a,t-rock=b,y-rock=c,a-rock=d,al-rock=e,c-rock=f,t-rap=g,y-rap=h,y-pop=i,t-pop=k,
+                j-blues=l,metal=m,h-hop=n,electro=p,r-b=r,t-sanat=s,halk=t,klasik=u,folk=v,h-metal=y,
+                reggae=z,country=w,latin=q,d-house=:,d-music=",funk=',k-pop=<,punk=>,
+
+4.movie-genre   action=a,adventure=b,animation=c,biography=d,comedy=e,rom-com=f,cri-policy=g,drama=h,
+                family=i,fantastic=k,horror=l,history=m,musical=n,romantic=x,sci-fi=y,war=z,western=t,
+                thriller=r,
+
+5.part-movie    l-1,l-2,l-3,l-4,l-5,r-1,r-2,a-1,a-2,y-1,y-2,y-3,y-4,y-5,y-6,y-7,k-1,k-2,k-3,k-4,k-5,b-1,
+                x-1,x-2,x-3,x-4,x-5,e-1,e-2,e-3,e-4,h-1,h-2,h-3,h-4,h-5,h-6,h-7,d-1,g-1,g-2,z-1,a-3,i-1,
+                c-1,c-2,c-3,c-4,g-3,g-4,a-4,h-8,m-1,r-3,r-4,r-5,g-5,c-5,e-5,e-6,e-7,
+
+6.fav-movie     action=a,adventure=b,animation=c,biography=d,comedy=e,rom-com=f,cri-policy=g,drama=h,
+                family=i,fantastic=k,horror=l,history=m,musical=n,romantic=x,sci-fi=y,war=z,western=t,
+                thriller=r,
+
+7.part-music    m-1,a-1,c-1,c-2,h-1,n-1,i-1,i-2,i-3,i-4,i-5,r-1,h-2,h-3,k-1,k-2,b-1,k-3,k-4,k-5,g-2,g-1,
+                u-1,l-1,u-2,u-3,<-1,p-1,:-3,:-1,:-2,p-2,q-1,q-2,c-2,c-1,"-1,p-3,
+
+8.fav-song      thrash=a,t-rock=b,y-rock,a-rock=d,al-rock=e,c-rock=f,t-rap=g,y-rap=h,y-pop=i,t-pop=k,
+                j-blues=l,metal=m,h-hop=n,electro=p,r-b=r,t-sanat=s,halk=t,klasik=u,folk=v,h-metal=y,
+                reggae=z,country=w,latin=q,d-house=:,d-music=",funk=',k-pop=<,punk=>,
+
+
+9.artists      b-1,b-2,b-3,b-4,b-5,b-6,h-1,h-2,h-3,h-4,k-1,k-2,k-3,k-4,k-5,k-6,i-1,i-2,i-3,i-4,i-5,i-6,
+               i-7,i-8,i-9,c-1,c-2,c-3,c-4,c-5,t-1,t-2,a-1,a-2,a-3,a-4,g-1,g-2,g-3,f-1,e-1,e-2,e-3,d-1,
+               d-2,:-1,:-2,:-3,u-1,u-2,u-3,n-1,y-1,y-2,w-1,r-1,r-2,<-1,
+
+

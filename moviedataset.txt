@@ -1,0 +1,33 @@
+
+
+part-movie
+
+1.action            a-1=missimp,a-2=spartians,a-3=braveheart,a-4=fightc
+
+2.adventure         b-1=jurpark
+
+3.animation         c-1=coco,c-2=moana,c-3=lionk,c-4=frozen,c-5=cars
+
+4.biography         d-1=rocky
+
+5.comedy            e-1=hababam,e-2=truman,e-3=gora,e-4=hangover,e-5=cdans,e-6=organize,e-7=vizontele
+
+6.rom-com           f-1=sweetn
+
+7.crime-policy      g-1=godfat,g-2=seven,g-3=goneg,g-4=johnw,g-5=milyoner
+
+8.drama             h-1=redrum,h-2=forgump,h-3=baveog,h-4=dag,h-5=piyanist,h-6=greenmi
+
+9.family            i-1=increedibles
+
+10.fantastic        k-1=aliens,k-2=lordof,k-3=starw,k-4=bigfish,k-5=avatar
+
+11.horror           l-1=conju,l-2=it,l-3=paranor,l-4=cuma,l-5=garez
+
+12.history           m-1=troy
+ 
+13.romantic         x-1=titanic,x-2=noteb,x-3=pandp,x-4=sunrise
+
+14.sci-fi           y-1=mayceh,y-2=btfut,y-3=incepti,y-4=matrix,y-5=interst,y-6=prestig,y-7=eternals
+
+15.thriller         r-1=saw,r-2=vforv,r-3=shining,r-4=psycho,r-5=memento
