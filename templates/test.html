@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body,h1 {font-family: "Raleway", sans-serif}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 30%;
+}
+.column img{max-width:100%;}
+
+/* Middle column */
+.column.middle {
+  width: 40%;
+  text-align:center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+</style>
+<body>
+ <header class="w3-container w3-xlarge w3-padding-24">
+   <a href="{{ url_for('test') }}"class="w3-left w3-button w3-white">TEST</a>
+   <a href="{{ url_for('about') }}" class="w3-right w3-button w3-white">About</a>
+
+
+
+<div class="row">
+
+
+  <div class="column side">
+   <img src="picture9.jpeg" >
+    <img src="picture1.jpeg" >
+     <img src="picture2.jpeg" >
+	 <img src="picture3.jpeg" >
+	 <img src="picture4.jpeg" >
+
+  </div>
+
+
+  <div class="column middle">
+    <h2 class="quiz-question">Q1:What is your gender?</h2>
+  <ul data-quiz-question="1">
+ <input type="radio" name="topping" value="supreme">Supreme</input>
+</label>
+   <input type="radio" name="topping" value="vegetarian">Vegetarian</input>
+  </label>
+  	<label class="container">I dont want to answer
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+
+  </ul>
+
+  <h2 class="quiz-question">Q2: What is your age gap?</h2>
+  <ul data-quiz-question="2">
+    	<label class="container">15-18
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+    	<label class="container">19-22
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  </label>
+  	<label class="container">23-26
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">27-30
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">31-35
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">36-40
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">41+
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+  </ul>
+
+  <h2 class="quiz-question">Q3: What is your favorite music genre?</h2>
+  <ul data-quiz-question="3">
+    <label class="container">Turkish Pop
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Rock
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Pop
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">R & B
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Metal
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Deep House
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Electronical Music
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Latin
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Classical Music
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Rap
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+
+  </ul>
+
+  <h2 class="quiz-question">Q4: What is your favorite song?</h2>
+  <ul data-quiz-question="4">
+    <label class="container">Metallica- Master Of Puppets
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Queen- Bohemian Rhapsody
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">The Weeknd- Starboy
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">RTchaikovsky- Swan Lake
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Ceza- Yerli Plaka
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Eminem- Lose Yourself
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+  </ul>
+
+  <h2 class="quiz-question">Q5: Who is your favorite artist?</h2>
+  <ul data-quiz-question="5">
+  <label class="container">Duman
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Sagopa Kajmer
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">The Beatles
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Metallica
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Maroon 5
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Scorpions
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Britney Spears
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+  </ul>
+
+  <h2 class="quiz-question">Q6: What is your favorite movie type?</h2>
+  <ul data-quiz-question="6">
+   <label class="container">Action
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Animation
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Romantic Comedy
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Crime Movies
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Fantastic Movies
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Horror Movies
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+	<label class="container">Drama
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+  	</label>
+  </ul>
+  </div>
+
+
+
+  <div class="column side">
+    <img src="picture5.jpeg" >
+     <img src="picture6.jpeg" >
+	 <img src="picture7.jpeg" >
+	 <img src="picture8.jpeg" >
+	 <img src="picture1.jpeg" >
+  </div>
+</div>
+
+
+</body>
+</html>

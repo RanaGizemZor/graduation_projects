@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('interstellar.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+<body>
+ <header class="w3-container w3-xlarge w3-padding-24">
+   <a href="{{ url_for('test') }}"class="w3-left w3-button w3-white">TEST</a>
+   <a href="{{ url_for('about') }}" class="w3-right w3-button w3-white">About</a>
+
+  </header>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top w3-center">ABOUT US</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">This website is prepared for two students graduation project. Website only has a test part the test will give you movie recommendation according to your music taste. When you couldnt find a movie to watch dont hasitate too make the test and see the recommendation if you want to give us some advises about test question or the songs , artist or the movies you can contact us and give us your opinion</p>
+  </div>
+
+</div>
+
+</body>
+</html>

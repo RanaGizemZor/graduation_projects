@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+.form {
+   padding: 10px;
+   margin: auto;
+   width: 20%;
+   display: block;
+   position: relative;
+   padding-left: 35px;
+   margin-bottom: 12px;
+   cursor: pointer;
+   font-size: 22px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+
+}
+
+</style>
+</head>
+
+   <body>
+      <h2 style = "text-align: center;"> Form</h2>
+
+      <form action = "http://localhost:5000/contact" method = post>
+         <fieldset >
+            <legend> Form</legend>
+            {{ form.hidden_tag() }}
+
+            <div class="form">
+
+               {{ form.Gender.label }} {{ form.Gender }}
+
+               <br>
+               <p>Select your age gap</p>
+               {{ form.Age }}     {{ form.Age.label }}  <br>
+               {{ form.Age1 }}    {{ form.Age1.label }} <br>
+               {{ form.Age2 }}    {{ form.Age2.label }}  <br>
+               {{ form.Age3 }}    {{ form.Age3.label }}  <br>
+               {{ form.Age4 }}    {{ form.Age4.label }} <br>
+               {{ form.Age5 }}    {{ form.Age5.label }}  <br>
+               {{ form.Age6 }}    {{ form.Age6.label }}  <br>
+               <br>
+               <p>Select your favorite music genre</p>
+               {{ form.Music }}    {{ form.Music.label }} <br>
+               {{ form.Music1 }}   {{ form.Music1.label }} <br>
+               {{ form.Music2 }}   {{ form.Music2.label }}  <br>
+               {{ form.Music3 }}   {{ form.Music3.label }}  <br>
+               {{ form.Music4 }}   {{ form.Music4.label }} <br>
+               {{ form.Music5 }}   {{ form.Music5.label }}  <br>
+               {{ form.Music6 }}   {{ form.Music6.label }} <br>
+               {{ form.Music7 }}   {{ form.Music7.label }} <br>
+               {{ form.Music8 }}   {{ form.Music8.label }} <br>
+               {{ form.Music9 }}   {{ form.Music9.label }}  <br>
+               {{ form.Music10 }}  {{ form.Music10.label }}  <br>
+               {{ form.Music11 }}  {{ form.Music11.label }}  <br>
+              <br>
+              <p>Select your favorite songs</p>
+               {{ form.Fav }}   {{ form.Fav.label }} <br>
+               {{ form.Fav1 }}  {{ form.Fav1.label }}  <br>
+               {{ form.Fav2 }}  {{ form.Fav2.label }} <br>
+               {{ form.Fav3 }}  {{ form.Fav3.label }} <br>
+               {{ form.Fav4 }}  {{ form.Fav4.label }} <br>
+               {{ form.Fav5 }}  {{ form.Fav5.label }} <br>
+                <br>
+                <p>Select your favorite artist</p>
+               {{ form.Artist }}    {{ form.Artist.label }}  <br>
+               {{ form.Artist1 }}   {{ form.Artist1.label }}  <br>
+               {{ form.Artist2 }}   {{ form.Artist2.label }}  <br>
+               {{ form.Artist3 }}   {{ form.Artist3.label }} <br>
+               {{ form.Artist4 }}   {{ form.Artist4.label }}  <br>
+               {{ form.Artist5 }}   {{ form.Artist5.label }} <br>
+               {{ form.Artist6 }}   {{ form.Artist6.label }} <br>
+              <br>
+              <p>Select your favorite movie genre</p>
+               {{ form.Movie }}   {{ form.Movie.label }}  <br>
+               {{ form.Movie1 }}  {{ form.Movie1.label }}  <br>
+               {{ form.Movie2 }}  {{ form.Movie2.label }}  <br>
+               {{ form.Movie3 }}  {{ form.Movie3.label }}  <br>
+               {{ form.Movie4 }}  {{ form.Movie4.label }} <br>
+               {{ form.Movie5 }}  {{ form.Movie5.label }}  <br>
+               {{ form.Movie6 }}  {{ form.Movie6.label }}<br>
+
+                 <br>
+                 <br>
+               {{ form.submit }}
+            </div>
+
+         </fieldset>
+      </form>
+   </body>
+</html>
